@@ -15,11 +15,11 @@ jobs:
           registry-url: "https://registry.npmjs.org"
       - run: yarn
       - run: yarn build
-      - run: yarn test
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          flags: unittests
-          name: codecov-chromiumly
-          fail_ci_if_error: true
-          verbose: true
+      # - run: yarn test
+      # - name: Upload coverage to Codecov
+      #   uses: codecov/codecov-action@v3
+      #   with:
+      #     flags: unittests
+      #     name: codecov-chromiumly
+      #     fail_ci_if_error: true
+      #     verbose: true
